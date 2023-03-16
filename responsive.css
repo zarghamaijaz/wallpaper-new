@@ -1,0 +1,275 @@
+@media(max-width:1600px){
+    /* Grid START */
+    .container{
+        max-width: 1600px;
+    }
+    .grid-lap{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid-cell-5-lap{
+        width: 5%;
+    }
+    .grid-cell-10-lap{
+        width: 10%;
+    }
+    .grid-cell-15-lap{
+        width: 15%;
+    }
+    .grid-cell-20-lap{
+        width: 20%;
+    }
+    .grid-cell-25-lap{
+        width: 25%;
+    }
+    .grid-cell-30-lap{
+        width: 30%;
+    }
+    .grid-cell-35-lap{
+        width: 35%;
+    }
+    .grid-cell-40-lap{
+        width: 40%;
+    }
+    .grid-cell-45-lap{
+        width: 45%;
+    }
+    .grid-cell-50-lap{
+        width: 50%;
+    }
+    .grid-cell-55-lap{
+        width: 55%;
+    }
+    .grid-cell-60-lap{
+        width: 60%;
+    }
+    .grid-cell-65-lap{
+        width: 65%;
+    }
+    .grid-cell-70-lap{
+        width: 70%;
+    }
+    .grid-cell-75-lap{
+        width: 75%;
+    }
+    .grid-cell-80-lap{
+        width: 80%;
+    }
+    .grid-cell-85-lap{
+        width: 85%;
+    }
+    .grid-cell-90-lap{
+        width: 90%;
+    }
+    .grid-cell-95-lap{
+        width: 95%;
+    }
+    .grid-cell-100-lap{
+        width: 100%;
+    }
+    /* Grid END */
+
+
+
+    .text-right-lap{
+        text-align: right;
+    }
+    .text-left-lap{
+        text-align: left;
+    }
+    .text-justify-lap{
+        text-align: justify;
+    }
+    .text-center-lap{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+@media(max-width:992px){
+    /* Grid START */
+    .container{
+        max-width: 992px;
+    }
+    .grid-tab{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid-cell-5-tab{
+        width: 5%;
+    }
+    .grid-cell-10-tab{
+        width: 10%;
+    }
+    .grid-cell-15-tab{
+        width: 15%;
+    }
+    .grid-cell-20-tab{
+        width: 20%;
+    }
+    .grid-cell-25-tab{
+        width: 25%;
+    }
+    .grid-cell-30-tab{
+        width: 30%;
+    }
+    .grid-cell-35-tab{
+        width: 35%;
+    }
+    .grid-cell-40-tab{
+        width: 40%;
+    }
+    .grid-cell-45-tab{
+        width: 45%;
+    }
+    .grid-cell-50-tab{
+        width: 50%;
+    }
+    .grid-cell-55-tab{
+        width: 55%;
+    }
+    .grid-cell-60-tab{
+        width: 60%;
+    }
+    .grid-cell-65-tab{
+        width: 65%;
+    }
+    .grid-cell-70-tab{
+        width: 70%;
+    }
+    .grid-cell-75-tab{
+        width: 75%;
+    }
+    .grid-cell-80-tab{
+        width: 80%;
+    }
+    .grid-cell-85-tab{
+        width: 85%;
+    }
+    .grid-cell-90-tab{
+        width: 90%;
+    }
+    .grid-cell-95-tab{
+        width: 95%;
+    }
+    .grid-cell-100-tab{
+        width: 100%;
+    }
+    /* Grid END */
+
+
+    .text-right-tab{
+        text-align: right;
+    }
+    .text-left-tab{
+        text-align: left;
+    }
+    .text-justify-tab{
+        text-align: justify;
+    }
+    .text-center-tab{
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width:573px){
+    /* Grid START */
+    .container{
+        max-width: 573px;
+    }
+    .grid-mob{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .grid-cell-5-mob{
+        width: 5%;
+    }
+    .grid-cell-10-mob{
+        width: 10%;
+    }
+    .grid-cell-15-mob{
+        width: 15%;
+    }
+    .grid-cell-20-mob{
+        width: 20%;
+    }
+    .grid-cell-25-mob{
+        width: 25%;
+    }
+    .grid-cell-30-mob{
+        width: 30%;
+    }
+    .grid-cell-35-mob{
+        width: 35%;
+    }
+    .grid-cell-40-mob{
+        width: 40%;
+    }
+    .grid-cell-45-mob{
+        width: 45%;
+    }
+    .grid-cell-50-mob{
+        width: 50%;
+    }
+    .grid-cell-55-mob{
+        width: 55%;
+    }
+    .grid-cell-60-mob{
+        width: 60%;
+    }
+    .grid-cell-65-mob{
+        width: 65%;
+    }
+    .grid-cell-70-mob{
+        width: 70%;
+    }
+    .grid-cell-75-mob{
+        width: 75%;
+    }
+    .grid-cell-80-mob{
+        width: 80%;
+    }
+    .grid-cell-85-mob{
+        width: 85%;
+    }
+    .grid-cell-90-mob{
+        width: 90%;
+    }
+    .grid-cell-95-mob{
+        width: 95%;
+    }
+    .grid-cell-100-mob{
+        width: 100%;
+    }
+    /* Grid END */
+
+
+    .text-right-mob{
+        text-align: right;
+    }
+    .text-left-mob{
+        text-align: left;
+    }
+    .text-justify-mob{
+        text-align: justify;
+    }
+    .text-center-mob{
+        text-align: center;
+    }
+}
+
+
+

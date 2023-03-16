@@ -1,0 +1,275 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+
+html{
+    --clr-pr:#3DDC97;
+    --clr-pr-light:#5aebac;
+    --clr-sc:#947BD3;
+    --clr-sc-light:#b39bf0;
+    --clr-text:#252422;
+    --clr-text-light:#858585;
+    --clr-bg:#FDF7FA;
+    --clr-white:#ffffff;
+    --clr-black:#000000;
+}
+
+@media (prefers-color-scheme: dark) {
+    html{
+        --clr-pr:#289666;
+        --clr-pr-light:#30a975;
+        --clr-sc:#7f6bb0;
+        --clr-sc-light:#8f7dbe;
+        --clr-text:#FDF7FA;
+        --clr-text-light:#858585;
+        --clr-bg:#252422;
+        --clr-white:#000000;
+        --clr-black:#ffffff;
+    }    
+}
+
+body{
+    background-color: var(--clr-bg);
+    color: var(--clr-text);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+
+/* Resets START */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Playfair Display', serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0px;
+}
+
+input,
+button,
+textarea,
+select{
+    font: inherit;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+/* Resets END */
+
+
+.text-big{
+    font-size: 1.75rem;
+}
+.text-giant{
+    font-size: 2.75rem;
+}
+
+
+
+
+
+
+
+/* Buttons START */
+
+
+.btn{
+    padding: 0.3em 1em;
+    background-color: var(--clr-white);
+    color: var(--clr-black);
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 5px 0px #0003;
+}
+.btn.is-big{
+    font-size: 1.25rem;
+}
+.btn.is-giant{
+    font-size: 1.5rem;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn.pr{
+    background-color: var(--clr-pr);
+    color: var(--clr-text);
+}
+.btn.pr:hover,
+.btn.pr:focus{
+    background-color: var(--clr-pr-light);
+}
+.btn.sc{
+    background-color: var(--clr-sc);
+    color: var(--clr-text);
+}
+.btn.sc:hover,
+.btn.sc:focus{
+    background-color: var(--clr-sc-light);
+}
+
+/* Buttons END */
+
+
+
+/* links START */
+
+.link{
+    padding: 0.2rem;
+    color: var(--clr-text);
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+}
+.link::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-text);
+    left: 0px;
+    bottom: 0px;
+    transform: translateX(-100%);
+    transition: transform 225ms;
+}
+.link:hover::after,
+.link:focus::after{
+    transform: translateX(0%);
+}
+
+.link.pr{
+    color: var(--clr-pr);
+}
+.link.pr::after{
+    background-color: var(--clr-pr);
+}
+.link.pr:hover{
+    color: var(--clr-pr-light);
+}
+.link.sc{
+    color: var(--clr-sc);
+}
+.link.sc::after{
+    background-color: var(--clr-sc);
+}
+.link.sc:hover{
+    color: var(--clr-sc-light);
+}
+
+
+
+/* links END */
+
+
+
+/* inputs START */
+
+.input-holder{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+    color: var(--clr-text);
+}
+.input-holder::after{
+    content: "";
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    height: 2px;
+    width: 100%;
+    background-color: var(--clr-text);
+    transform: translateX(-100%);
+    transition: transform 500ms;
+}
+.input-holder label{
+    color: var(--clr-text-light);
+}
+.input-holder:focus-within label{
+    color: var(--clr-text);
+}
+.input-holder:focus-within::after{
+    transform: translateX(0%);
+}
+
+
+
+
+.input-holder.pr{
+    color: var(--clr-pr);
+}
+.input-holder.pr::after{
+    background-color: var(--clr-pr);
+}
+.input-holder.pr:focus-within label{
+    color: var(--clr-pr);
+}
+.input-holder.sc{
+    color: var(--clr-sc);
+}
+.input-holder.sc::after{
+    background-color: var(--clr-sc);
+}
+.input-holder.sc:focus-within label{
+    color: var(--clr-sc);
+}
+
+
+
+
+
+input,
+textarea,
+select{
+    color: inherit;
+    width: 100%;
+    padding: 0.2rem 0px;
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--clr-text-light);
+}
+input:focus,
+textarea:focus,
+select:focus{
+    outline: none;
+}
+
+
+
+
+/* inputs END */
+
+
+
+
+.page-title{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-block: 1em;
+}
+.card{
+    padding: 15px;
+    box-shadow: 0px 0px 10px #0005;
+    background-color: var(--clr-bg);
+    border-radius: 0.5rem;
+}
+
