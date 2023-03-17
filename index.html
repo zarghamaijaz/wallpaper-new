@@ -14,13 +14,37 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-    <header>Header test</header>
-    <h1>Test font</h1>
-    <h2>Test font</h2>
-    <h3>Test font</h3>
-    <h4>Test font</h4>
-    <h5>Test font</h5>
-    <h6>Test font</h6>
+    <header>
+        <div class="container">
+            <div class="header-wrap">
+                <h3>Wallpapers</h3>
+                <nav class="header-nav">
+                    <ul class="menu">
+                        <li>
+                            <a href="#" class="link">link 1</a>
+                        </li>
+                        <li>
+                            <a href="#" class="link">link 2</a>
+                            <ul class="submenu">
+                                <li>
+                                    <a href="" class="link">Item 1</a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">Item 2</a>
+                                </li>
+                                <li>
+                                    <a href="" class="link">Item 3</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="link">link 3</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ea ducimus sunt molestias placeat at similique corrupti cum iusto! At iusto inventore nam deleniti earum.</p>
     <button>Test button</button>
     <button class="btn">Test button</button>
@@ -46,72 +70,130 @@
             <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
         </div>
     </div>
-    <div class="grid">
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-        <div class="grid-cell-20 grid-cell-25-lap grid-cell-50-tab grid-cell-100-mob">Grid cell test</div>
-    </div>
-    <div class="">
-        <h1 class="page-title">Signup for free</h1>
-    </div>
     <section>
         <div class="container">
-            <div class="grid">
-                <div class="grid-cell-50"></div>
-                <div class="grid-cell-50">
-                    <div class="card m-4">
-                        <h2 class="text-giant mb-2">Signup</h2>
-                        <form action="">
-                            <div class="grid">
-                                <div class="grid-cell-50 grid-cell-100-tab">
-                                    <div class="input-holder pr">
-                                        <label for="name">Name*</label>
-                                        <input type="text" name="name" id="name"/>
-                                    </div>
-                                </div>
-                                <div class="grid-cell-50 grid-cell-100-tab">
-                                    <div class="input-holder pr">
-                                        <label for="name">Email*</label>
-                                        <input type="email" name="email" id="email"/>
-                                    </div>
-                                </div>
-                                <div class="grid-cell-50 grid-cell-100-tab">
-                                    <div class="input-holder pr">
-                                        <label for="name">Password*</label>
-                                        <input type="password" name="password" id="password"/>
-                                    </div>
-                                </div>
-                                <div class="grid-cell-50 grid-cell-100-tab">
-                                    <div class="input-holder pr">
-                                        <label for="category">Category</label>
-                                        <select name="category" id="category">
-                                            <option value="1">Anime</option>
-                                            <option value="1">Cars</option>
-                                            <option value="1">Movies</option>
-                                            <option value="1">I don't know</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="grid-cell-50 grid-cell-100-tab">
-                                    <div class="input-holder pr">
-                                        <label for="description">Description</label>
-                                        <textarea name="description" id="description"></textarea>
-                                    </div>
-                                </div>
-                                <div class="grid-cell-100">
-                                    <button class="btn pr" type="submit">Signup</button>
-                                </div>
+            <div class="card m-4 mx-auto" style="max-width: 800px;">
+                <h2 class="text-giant mb-2">Login form</h2>
+                <form action="">
+                    <div class="grid">
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="name">Email*</label>
+                                <input type="email" name="email" id="email"/>
                             </div>
-                        </form>
-                        <div class="text-right">
-                            <a href="#" class="link sc">I already have an account</a>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="name">Password*</label>
+                                <input type="password" name="password" id="password"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-100">
+                            <button class="btn pr" type="submit">Login</button>
                         </div>
                     </div>
+                </form>
+                <div class="text-right">
+                    <a href="#" class="link sc">I already have an account</a>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="card m-4 mx-auto" style="max-width: 800px;">
+                <h2 class="text-giant mb-2">Add category</h2>
+                <form action="">
+                    <div class="grid">
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="slug">Slug</label>
+                                <input type="text" name="slug" id="slug"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="name">Description</label>
+                                <textarea name="description" id="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="thumbnail">Thumbnail</label>
+                                <input id="thumbnail" type="file" name="thumbnail"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr checkbox">
+                                <input id="featured" type="checkbox" name="featured"/>
+                                <label for="featured">Featured</label>
+                            </div>
+                        </div>
+                        <div class="grid-cell-100">
+                            <button class="btn pr" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="card m-4 mx-auto" style="max-width: 800px;">
+                <h2 class="text-giant mb-2">Add album</h2>
+                <form action="">
+                    <div class="grid">
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="category">Category</label>
+                                <select name="category" id="category">
+                                    <option value="category-id-here">Category 1</option>
+                                    <option value="category-id-here">Category 2</option>
+                                    <option value="category-id-here">Category 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="slug">Slug</label>
+                                <input type="text" name="slug" id="slug"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="name">Description</label>
+                                <textarea name="description" id="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr">
+                                <label for="thumbnail">Thumbnail</label>
+                                <input id="thumbnail" type="file" name="thumbnail"/>
+                            </div>
+                        </div>
+                        <div class="grid-cell-50 grid-cell-100-tab">
+                            <div class="input-holder pr checkbox">
+                                <input id="featured" type="checkbox" name="featured"/>
+                                <label for="featured">Featured</label>
+                            </div>
+                        </div>
+                        <div class="grid-cell-100">
+                            <button class="btn pr" type="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
     </section>

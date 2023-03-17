@@ -231,7 +231,25 @@ a{
     color: var(--clr-sc);
 }
 
-
+.input-holder.radio,
+.input-holder.checkbox{
+    background-color: var(--clr-bg);
+    padding: 5px 0px;
+    margin-bottom: 5px;
+    display: flex;
+    gap: 5px;
+}
+.input-holder.radio label,
+.input-holder.checkbox label{
+    color: var(--clr-text);
+}
+.input-holder.radio input,
+.input-holder.checkbox input{
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
 
 
 
@@ -240,6 +258,7 @@ textarea,
 select{
     color: inherit;
     width: 100%;
+    max-width: 100%;
     padding: 0.2rem 0px;
     display: block;
     background-color: transparent;
@@ -271,5 +290,49 @@ select:focus{
     box-shadow: 0px 0px 10px #0005;
     background-color: var(--clr-bg);
     border-radius: 0.5rem;
+}
+
+
+
+
+
+
+
+
+.header-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 15px;
+    border-bottom: 1px solid var(--clr-text-light);
+    margin-bottom: 10px;
+}
+.header-nav .menu{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.menu li{
+    position: relative;
+}
+.menu li:hover .submenu,
+.menu li:focus-within .submenu{
+    display: block;
+}
+.submenu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 0px;
+    margin: 0px;
+    right: 0px;
+    list-style: none;
+    width: max-content;
+    background-color: var(--clr-white);
+    box-shadow: 0px 5px 15px #0003;
+}
+.submenu a{
+    padding: 0.5em 1em;
 }
 
